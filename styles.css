@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    width: 90%;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+    float: left;
+    margin-left: 1rem;
+}
+.logo span{
+    color: yellow;
+}
+.navbar{
+    float: right;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: inline-flex;    
+}
+.navbar ul li{  
+    margin: 0 2rem;
+}
+.navbar ul li:last-child{
+    margin-right: 0px;
+}
+.navbar ul li a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+    font-size: 1.2rem;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: yellow;
+    border-radius: 0 1.2rem;
+}
+.home{
+    margin: 0 auto;
+}
+.home .snap{
+    float: right;
+    margin: 3rem 7rem 0;
+    position: relative;
+    border-radius:70px 0;
+    overflow: hidden;
+}
+.home .snap img{
+    filter: brightness(0.7);
+}
+
+.home .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: silver;
+    z-index: 99;
+}
+.home .snap img,
+.home .intro h2,
+.home .intro .description,
+.home .intro .tags{
+    opacity: 0;
+}
+.home .intro{
+    color: white;
+    margin-top: 30vh;
+    position: absolute;
+    margin-left: 8%;
+}
+.intro h2{
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+    margin-right: 100px;
+}
+
+.intro p{
+    font-size: 2rem;
+    word-spacing: 10px;
+    margin-bottom: 10vh;
+    margin-left: 100px;
+}
+.intro .tags{
+    color: yellow;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}

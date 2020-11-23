@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swati Modi</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SWATI <span>MODI</span></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" target="blank">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="home">
+            <div class="snap">
+                <span class="overlay"></span>
+                <img class="pic" src="images/profilePic-removebg-preview.png" alt="">
+            </div>
+            <div class="intro">
+                <h2 class="name">Hello, I'm <span>Swati Modi</span>.</h2>
+                <p class="description">I solve problems with <span>Tech</span>.</p>
+                <p class="tags">Software Engneer <span>|</span> Maker <span>|</span> Tech Enthusiast</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".name, .description, tags").lettering();
+
+            anime({
+                targets: '.home .overlay',
+                translateX: 1100,
+                delay: 1000,
+                duration: 1500,
+                easing: 'easeInSine' 
+            });
+            anime({
+                targets: '.home .snap img',
+                opacity: 1,
+                delay: 1500,
+                duration: 1500,
+                easing: 'easeInSine'
+            });
+            anime({
+                targets: '.home .intro h2',
+                translateX: -10,
+                opacity: 1,
+                duration: 2500,
+                easing: 'easeInSine',
+                delay: anime.stagger(100, {start:2500})
+            });
+            anime({
+                targets: '.home .intro .description',
+                translateX: -100,
+                opacity: 1,
+                duration: 2500,
+                easing: 'easeInSine',
+                delay: anime.stagger(100, {start:3500})
+            });
+            
+            anime({
+                targets: '.home .intro .tags',
+                translateX: -100,
+                opacity: 1,
+                duration: 2500,
+                easing: 'easeInSine',
+                delay: anime.stagger(100, {start:4500})
+            });
+
+        });
+    </script>
+</body>
+</html>
