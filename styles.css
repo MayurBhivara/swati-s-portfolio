@@ -106,3 +106,23 @@ header{
     text-transform: uppercase;
     word-spacing: 5px;
 }
+.intro .tags span{
+    color: white;
+}
+.intro h2 .char12,
+.intro h2 .char13,
+.intro h2 .char14,
+.intro h2 .char15,
+.intro h2 .char16,
+.intro h2 .char18,
+.intro h2 .char19,
+.intro h2 .char20,
+.intro h2 .char21{
+    color: yellow;
+}
+.intro .description .char23,
+.intro .description .char24,
+.intro .description .char25,
+.intro .description .char26{
+    color: blue;
+}
